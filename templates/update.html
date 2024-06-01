@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Update Task{% endblock %}
+
+{% block content %}
+<form method="POST" class="todo-form">
+    <label for="title">Task Title Update:</label>
+    <input type="text" id="title" name="title" value="{{ todo.title }}" required>
+    <label for="title">Task Discription:</label>
+    <input type="text" id="discription" name="discription" value="{{ todo.disc}}">
+    <label for="title">Task Deadline:</label>
+    <input type="date" id="deadline" name="deadline" value="{{ todo.deadline}}">
+    <button class="btn" type="submit">Update Task</button>
+</form>
+{% endblock %}

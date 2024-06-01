@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Task{% endblock %}
+
+{% block content %}
+<form method="POST" class="todo-form">
+    <label for="title">Task Title:</label>
+    <input type="text" id="title" name="title" required>
+    <label for="discription">Task Description:</label>
+    <input type="text" id="discription" name="discription" required>
+    <label for="deadline">Task Deadline:</label>
+    <input type="date" id="deadline" name="deadline" required>
+    <button class="btn" type="submit">Add Task</button>
+</form>
+{% endblock %}

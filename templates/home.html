@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<a class="btn" href="{{ url_for('add') }}"><button type="button" class="btn btn-warning">Add New Task</button></a>
+<ul class="todo-list">
+    <li>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Discription</th>
+                    <th scope="col">Deadline</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            {% for todo in todos %}
+            <tbody>
+                <tr>
+                    <td>{{ todo.id }}</td>
+                    <td>{{ todo.title }}</td>
+                    <td>{{ todo.disc }}</td>
+                    <td>{{ todo.deadline }}</td>
+                    <td><a class="btn" href="{{ url_for('update', id=todo.id) }}"><button type="button"
+                                class="btn btn-success">Edit</button></a>
+
+                        <a class="btn" href="{{ url_for('delete', id=todo.id) }}"><button type="button"
+                                class="btn btn-danger">Delete</button></a>
+                    </td>
+
+                </tr>
+
+            </tbody>
+            {% endfor %}
+        </table>
+    </li>
+</ul>
+{% endblock %}
