@@ -22,7 +22,7 @@ This is a simple To-Do application built with Flask and SQLAlchemy. It allows us
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/flask-todo-app.git
+   git clone https://github.com/sonalrajsr/todo.git
    cd flask-todo-app
    ```
 2. **Create a virtual environment:**
@@ -50,13 +50,3 @@ This is a simple To-Do application built with Flask and SQLAlchemy. It allows us
    ```bash
    python app.py
    ```
-
-flask-todo-app/
-│
-├── app.py                 # Main application file
-├── templates/
-│   ├── home.html          # Home page template
-│   ├── add.html           # Add to-do template
-│   └── update.html        # Update to-do template
-├── requirements.txt       # List of dependencies
-└── README.md              # This file
