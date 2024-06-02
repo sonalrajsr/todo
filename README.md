@@ -50,3 +50,6 @@ This is a simple To-Do application built with Flask and SQLAlchemy. It allows us
    ```bash
    python app.py
    ```
+**SchreenShots**
+![image](https://github.com/sonalrajsr/todo/assets/123736054/03b9348b-13a8-4eb0-9f55-39df8ff28544)
+![image](https://github.com/sonalrajsr/todo/assets/123736054/ad1979ef-33f7-4edb-b536-18796efe0e8a)
