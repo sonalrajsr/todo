@@ -49,4 +49,14 @@ This is a simple To-Do application built with Flask and SQLAlchemy. It allows us
 6. **Run application**
    ```bash
    python app.py
-```
+   ```
+
+flask-todo-app/
+│
+├── app.py                 # Main application file
+├── templates/
+│   ├── home.html          # Home page template
+│   ├── add.html           # Add to-do template
+│   └── update.html        # Update to-do template
+├── requirements.txt       # List of dependencies
+└── README.md              # This file
